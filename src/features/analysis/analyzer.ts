@@ -1,8 +1,9 @@
 import "server-only";
 
-import { createLocalFeedbackAnalyzer } from "@/features/analysis/local-analyzer";
+import { createTypeSafeFeedbackAnalyzer } from "@/features/analysis/typesafe-analyzer";
 import type { FeedbackAnalyzer } from "@/types/domain";
 
 export function createFeedbackAnalyzer(): FeedbackAnalyzer {
-  return createLocalFeedbackAnalyzer();
+  return createTypeSafeFeedbackAnalyzer();
 }
+
